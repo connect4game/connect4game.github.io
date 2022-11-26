@@ -11,9 +11,16 @@
 .title{
     font-family: HalloweenSlime;
     text-align: center;
-    font-size: 70px;
-    margin: 5pt 0;
+    font-size: 65px;
+    margin: 3pt 0 0 0;
 }   
+
+.authors{
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-family: HalloweenSlime;
+}
 
 .text-font-center{
     text-align: center;
