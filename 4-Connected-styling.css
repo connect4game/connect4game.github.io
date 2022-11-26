@@ -21,7 +21,7 @@ body{
     background-color: var(--background);
     margin: 0;
     user-select: none;  
-    height: 687px;
+    height: 600px;
 }
 
 .main {
