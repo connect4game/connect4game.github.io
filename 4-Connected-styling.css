@@ -20,13 +20,12 @@
 body{
     background-color: var(--background);
     margin: 0;
-    user-select: none;
-    overflow: hidden;   
+    user-select: none;  
 }
 
 .main {
     width: 1000px;
-    height: 1000px;
+    height: 800px;
     margin: auto;
 }
 
