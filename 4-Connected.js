@@ -167,9 +167,6 @@ const alphabeta = (node, depth, alpha, beta, maximizingPlayer) => {
                 let child = JSON.parse(JSON.stringify(node));
                 child = add_to_column(i, AI, child);
                 let value = alphabeta(child, depth - 1, alpha, beta, false);
-                if (depth == 5) {
-                    console.log("child " + i + ": " + value[1] + "\n");
-                }
                 if (best[0] == -1 || value[1] > best[1]) {
                     best[0] = i;
                     best[1] = value[1];
@@ -507,7 +504,6 @@ const click_action = (index) => {
             if (winner == 0) robot_turn();
         }
         if (winner != 0) start_action(false);
-        console.log(evaluation(board));
     }
 }
 
