@@ -21,12 +21,10 @@ body{
     background-color: var(--background);
     margin: 0;
     user-select: none;  
-    height: 600px;
 }
 
 .main {
     width: 1000px;
-    height: 687px;
     margin: auto;
 }
 
