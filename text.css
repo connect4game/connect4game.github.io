@@ -1,0 +1,41 @@
+@font-face {
+    font-family: SuperMario;
+    src: url(SuperMario256.ttf);
+  }
+
+  @font-face {
+    font-family: HalloweenSlime;
+    src: url(HalloweenSlimePersonalUse-4B80D.otf);
+  }
+
+.title{
+    font-family: HalloweenSlime;
+    text-align: center;
+    font-size: 70px;
+    margin: 20pt 0;
+}   
+
+.text-font-center{
+    text-align: center;
+    font-family: SuperMario, Helvetica, sans-serif;
+}
+
+.difficulty-text{
+    padding-top: 37px;
+    font-size: 20px;
+}
+
+
+.settings-title{
+    height: fit-content;
+    font-size: 22px;
+}
+
+.start-text{
+    padding-top: 30px;
+}
+
+.vs-text{
+    padding-top: 30px;
+    font-size: 20px;
+}

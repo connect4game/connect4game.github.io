@@ -1,0 +1,172 @@
+
+:root {
+    --background: #BEDCFE; /* accessible everywhere */
+    --pointColors: white;
+    --pointSelection: #055cb8;
+    --easy: green;
+    --medium: yellow;
+    --hard: red;
+    --start: rgb(87, 190, 87);
+    --start-selected: green;
+    --human: #d3eb9b;
+    --robot: #f4ab86;
+    --human-selected: #95c623;
+    --robot-selected: #ff8345;
+    --stop : orange;
+    --stop-selected : rgb(255, 81, 0);
+    --winning-line : #055cb8;
+}
+
+body{
+    background-color: var(--background);
+    margin: 0;
+    user-select: none;
+    overflow: hidden;   
+}
+
+.main {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0;
+    width: 700px;
+    height: 588px;
+}
+
+
+.line{
+    z-index: 200;
+    padding: auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.point{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--pointColors);
+    border-radius: 20px;
+}
+
+.space{
+    width: 75px;
+    height: 75px;
+    transform: matrix(1, 0, 0, 1, 0, 7);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background);
+    border-radius: 50%;
+}
+
+.settings{
+    position: relative; 
+    width: 275px;
+    height: 588px;
+}
+
+.vs{
+    display: flex;
+    width: 220px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box{
+    width: 100px;
+    height: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+
+.vs-human{
+    background-color: var(--human-selected);
+}
+
+.vs-human:hover{
+    background-color: var(--human-selected) !important;
+}
+
+.vs-robot{
+    background-color: var(--robot);
+}
+
+.vs-robot:hover{
+    background-color: var(--robot-selected) !important;
+}
+
+.hidden{
+    display: none;
+}
+
+.difficulty-section{
+    position: absolute;
+    top : 160px;
+    left: 25px;
+}
+
+.difficulty{
+    width: 220px;
+    height: 90px;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+
+.difficulty div{
+    transition: transform 0.5s ease-in-out;
+}
+
+.difficulty:hover div{
+    transform: matrix(2, 0, 0, 2, 0, -20) !important;
+}
+
+.easy{
+    background-color: var(--easy);
+}
+
+.medium{
+    background-color: var(--medium);
+}
+
+.hard{
+    background-color: var(--hard);
+}
+
+.start{
+    background-color: var(--start);
+    width: 220px;
+    height: 80px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0px;
+    left: 25px;
+}
+
+.top{
+    position: absolute;
+    top: 70px;
+    left: 25px;
+}
